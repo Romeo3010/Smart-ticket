@@ -1,0 +1,460 @@
+/* --- CONFIGURATION GÉNÉRALE & THÈME PRESTIGE --- */
+:root {
+  --dark-bg: #0a0a0a;
+  --dark-surface: #1a1a1a;
+  --gold-primary: #d4af37;
+  --gold-bright: #ffd700;
+  --white: #ffffff;
+  --gray-text: #b0b0b0;
+  --input-bg: #262626;
+
+  font-family: "Poppins", sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark-bg);
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- MISE EN PAGE DE BASE --- */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+  background-color: var(--dark-surface) !important;
+  border-bottom: 2px solid var(--gold-primary);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  color: var(--gold-primary) !important;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* --- SECTION HERO (ACCUEIL) --- */
+.hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 span {
+  color: var(--gold-primary);
+}
+
+/* --- CARTES D'ÉVÉNEMENTS (GRID) --- */
+.card-event-prestige {
+  background-color: var(--dark-surface);
+  border: 1px solid #333;
+  border-radius: 15px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+  height: 100%;
+}
+
+.card-event-prestige:hover {
+  transform: translateY(-10px);
+  border-color: var(--gold-primary);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+.card-img-container-prestige {
+  height: 200px;
+}
+
+.card-img-container-prestige img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- BOUTONS --- */
+.btn-prestige,
+.btn-all {
+  background-color: var(--gold-primary);
+  color: #000 !important;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn-prestige:hover,
+.btn-all:hover {
+  background-color: var(--gold-bright);
+  transform: scale(1.05);
+}
+
+.btn-details-prestige {
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-primary);
+  background: transparent;
+  padding: 8px 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-details-prestige:hover {
+  background: var(--gold-primary);
+  color: #000;
+}
+
+/* --- PAGES DÉTAILS ET ACHAT --- */
+.form-container {
+  background: var(--dark-surface);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #333;
+}
+
+.ticket-selector,
+.ticket-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.ticket-card:hover {
+  border-color: var(--gold-primary);
+}
+
+.qty-input {
+  width: 70px;
+  text-align: center;
+  font-weight: bold;
+  background: var(--gold-primary) !important;
+  color: #000 !important;
+  border: none;
+  border-radius: 5px;
+}
+
+.summary-panel {
+  background: rgba(212, 175, 55, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px dashed var(--gold-primary);
+}
+
+/* --- UTILITAIRES --- */
+.text-gold {
+  color: var(--gold-primary) !important;
+}
+.bg-gold {
+  background-color: var(--gold-primary) !important;
+}
+/* Couleur dorée pour le bouton menu mobile */
+.navbar-toggler {
+  border-color: var(--gold-primary) !important;
+}
+.navbar-toggler-icon {
+  filter: invert(70%) sepia(50%) saturate(500%) hue-rotate(10deg);
+}
+
+/* Styles des liens du menu */
+.nav-link {
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+  color: var(--gold-primary) !important;
+}
+
+/* Style spécifique pour le bouton Admin */
+.text-gold {
+  color: var(--gold-primary) !important;
+}
+
+.text-gold:hover {
+  color: var(--gold-bright) !important;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+/* Centrage vertical des éléments de la navbar */
+.navbar-nav {
+  align-items: center;
+}
+/* --- CONFIGURATION GÉNÉRALE & THÈME PRESTIGE --- */
+:root {
+  --dark-bg: #0a0a0a;
+  --dark-surface: #1a1a1a;
+  --gold-primary: #d4af37;
+  --gold-bright: #ffd700;
+  --white: #ffffff;
+  --gray-text: #b0b0b0;
+  --input-bg: #262626;
+
+  font-family: "Poppins", sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark-bg);
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- MISE EN PAGE DE BASE --- */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+  background-color: var(--dark-surface) !important;
+  border-bottom: 2px solid var(--gold-primary);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  color: var(--gold-primary) !important;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* --- SECTION HERO (ACCUEIL) --- */
+.hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 span {
+  color: var(--gold-primary);
+}
+
+/* --- CARTES D'ÉVÉNEMENTS (GRID) --- */
+.card-event-prestige {
+  background-color: var(--dark-surface);
+  border: 1px solid #333;
+  border-radius: 15px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+  height: 100%;
+}
+
+.card-event-prestige:hover {
+  transform: translateY(-10px);
+  border-color: var(--gold-primary);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+.card-img-container-prestige {
+  height: 200px;
+}
+
+.card-img-container-prestige img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- BOUTONS --- */
+.btn-prestige,
+.btn-all {
+  background-color: var(--gold-primary);
+  color: #000 !important;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn-prestige:hover,
+.btn-all:hover {
+  background-color: var(--gold-bright);
+  transform: scale(1.05);
+}
+
+.btn-details-prestige {
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-primary);
+  background: transparent;
+  padding: 8px 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-details-prestige:hover {
+  background: var(--gold-primary);
+  color: #000;
+}
+
+/* --- PAGES DÉTAILS ET ACHAT --- */
+.form-container {
+  background: var(--dark-surface);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #333;
+}
+
+.ticket-selector,
+.ticket-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.ticket-card:hover {
+  border-color: var(--gold-primary);
+}
+
+.qty-input {
+  width: 70px;
+  text-align: center;
+  font-weight: bold;
+  background: var(--gold-primary) !important;
+  color: #000 !important;
+  border: none;
+  border-radius: 5px;
+}
+
+.summary-panel {
+  background: rgba(212, 175, 55, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px dashed var(--gold-primary);
+}
+
+/* --- UTILITAIRES --- */
+.text-gold {
+  color: var(--gold-primary) !important;
+}
+.bg-gold {
+  background-color: var(--gold-primary) !important;
+}
+/* Couleur dorée pour le bouton menu mobile */
+.navbar-toggler {
+  border-color: var(--gold-primary) !important;
+}
+.navbar-toggler-icon {
+  filter: invert(70%) sepia(50%) saturate(500%) hue-rotate(10deg);
+}
+
+/* Styles des liens du menu */
+.nav-link {
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+  color: var(--gold-primary) !important;
+}
+
+/* Style spécifique pour le bouton Admin */
+.text-gold {
+  color: var(--gold-primary) !important;
+}
+
+.text-gold:hover {
+  color: var(--gold-bright) !important;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+/* Centrage vertical des éléments de la navbar */
+.navbar-nav {
+  align-items: center;
+}
+/* Structure de base */
+.admin-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #121212; /* Fond très sombre moderne */
+}
+
+/* Le contenu principal à droite de la sidebar */
+.admin-main-content {
+  flex-grow: 1;
+  margin-left: 280px; /* Largeur exacte de ta sidebar */
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive : Quand on est sur mobile */
+@media (max-width: 992px) {
+  .admin-main-content {
+    margin-left: 0; /* Plus de marge car la sidebar devient un tiroir */
+    padding: 20px;
+    padding-top: 80px; /* Espace pour le bouton menu burger */
+  }
+}
+
+/* Style des cartes modernes */
+.modern-card {
+  background: #1e1e1e !important;
+  border: 1px solid #333 !important;
+  border-radius: 15px !important;
+  color: white !important;
+}
+
+/* Inputs sombres avec focus doré */
+.custom-input {
+  background: #2d2d2d !important;
+  border: 1px solid #444 !important;
+  color: white !important;
+}
+.custom-input:focus {
+  border-color: #d4af37 !important;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2) !important;
+}
